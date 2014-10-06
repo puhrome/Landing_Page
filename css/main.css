@@ -1,0 +1,235 @@
+
+/*-------------------------------------------  general -------------------------------------------------------*/
+body{
+	font-size: 62.5%;
+	font-family: helvetica, arial, sans-serif;
+	color:#545257; /*changes color of the whole text*/
+	margin-top: 0;
+}
+#wrapper{
+	width:960px;
+	margin: 0 auto;
+	padding-left: 1%;
+	padding-right: 1%;
+	-webkit-box-shadow: 0px 0px 5px #ececec;
+	-moz-box-shadow:    0px 0px 5px #ececec;
+	box-shadow:         0px 0px 5px #ececec;
+
+}
+/*-------------------------------------------  header -------------------------------------------------------*/
+
+header{
+    background: url("../img/surf2_03.jpg") no-repeat 50% 0;
+    height: 500px;
+
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 5em;
+    color: #5779D6;
+    text-shadow: 1px 1px 2px #fff;
+    letter-spacing: 3px;
+	margin-top: 0;
+	padding-top: 30%;
+    padding-left: 60%;
+
+}
+h2{
+    font-family: 'Marcellus SC', serif;
+    font-size: 3em;
+    color: #475a80;
+	margin-top: 20px;
+}
+nav {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 2em;
+    color: #fff;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    padding-left: 60%;
+}
+nav li {
+    padding: 0 10px;
+}
+/*-------------------------------------------  table -------------------------------------------------------*/
+table{
+	background: #f7f7f9;  /*changes color of the background of the table*/
+	border-collapse: collapse;
+	width: 100%;
+}
+tr{
+	display: table-row;
+	border-color: inherit;
+}
+.odd{
+	background: #ececec; /*changes color of the stripes table*/
+}
+th{
+	text-align: left;
+	padding: 1em 1em .5em;
+	font-weight: bold;
+	font-size: 120%;
+	color: #545257;  /*changes color of table hd text*/
+	background: #bbbcc0; /*changes color of table hd background*/
+}
+th:first-child{
+	/*border-right: 1px solid #6a7680;*/
+}
+td{
+	padding: 1em 1em;
+	width: 69%;
+}
+td:first-child{
+	/*border-right: 1px solid #6a7680;*/
+}
+/*-------------------------------------------  top section-------------------------------------------------------*/
+.main{
+    overflow: auto;
+	/*border-bottom: 1px solid #bbb8bf;*/
+}
+.main p{
+    font-family: "Open Sans", sans-serif;
+    width: 67.5%;
+	float: left;
+	font-size: 1.5em;
+    line-height: 2em;
+
+}
+.main figure{
+	float: right;
+	margin: 15px 0 20px 10px;
+    width: 30%;
+
+}
+figure img{
+	width: 100%;
+
+}
+.sec{
+	clear: both;
+	margin-top: 40px;
+=
+}
+
+/*-------------------------------------------  links -------------------------------------------------------*/
+a{
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #475a80;  /*changes color of the links*/
+}
+a:hover{
+	text-decoration: underline;
+    color: #5779D6;
+}
+/*-------------------------------------------  footer-------------------------------------------------------*/
+footer{
+    font-family: "arial", sans-serif;
+    font-size: 1em;
+    color: #ececec;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+    padding-top: 20px;
+	text-align: center;
+	width: 100%;
+    background-color: #777;
+}
+/* ------------------------------------------- Media Queries -------------------------------------------------------*/
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		#wrapper{
+			width:98%;
+		}	
+	}
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+		#wrapper{
+			width:98%;
+
+		}
+		.main figure{
+			width: 35%;
+		}
+		.main figure img{
+			width: 100%;	
+		}
+		.main p{
+			width: 60%;	
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#wrapper{
+			width: 95%;
+	
+		}
+		.main, header, h2{
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+		.main figure{
+			width: 100%;
+			float: right;
+		}
+		.main p{
+			width: 98%;
+		}
+		.main figure img{
+			width: 100%;
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#wrapper{
+			width: 98%;
+			min-width: 480px;
+			max-width: 767px;
+		}
+		.main p{
+			width: 100%;
+		}
+		td{
+
+			width: 50%;
+		}
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#wrapper{
+			width: 96%;
+		}
+		figure {
+			display: none;
+		}
+		figcaption{
+			display: none;
+		}
+		.sec{
+			margin-top: 10px;
+		}
+		tr{
+			height: 44px;
+			line-height: 44px;
+		}
+		td{
+			width: 50%;
+			
+		}
+	}
+
+
